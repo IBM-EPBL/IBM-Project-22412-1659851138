@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %}
+Home
+{% endblock title %}
+
+{% block content %}
+{% if isRegistered %}
+<script>
+    window.onload=function(){
+        alert("Registration Successful!, Please Login");
+    }
+</script>
+{% endif %}
+<div class="grid_container">
+    <div class="desc_container">
+        <h1>Stockmaster</h1>
+        <p>
+            We help you to manage your Inventory. This is especially ment for retailers to meet demand of the product without
+            running out of stock or having more stock that causes stagnant capital.
+        </p>
+        <h4>Dont have a account ? <a href="signup"><button id="button">Sign Up</button></a></h4>
+    </div>
+    <div class="desc_image">
+        <img src="../static/inventory.jpg">
+    </div>
+    <div class="about_image">
+        <img src="../static/inventory2.jpg">
+    </div>
+    <div class="about_container">
+        <h2>About</h2>
+        <p>
+            An inventory management system is software that helps track a company's inventory and sales.
+            It supports employees by providing accurate inventory numbers and keeping products organized.
+            This helps a company manage its stock, fill orders and track the overall production or sales.
+            Using an electronic inventory management system requires minimal training and can help make inventory management more efficient.
+        </p>
+    </div>
+</div>
+{% endblock content %}
