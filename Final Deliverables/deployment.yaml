@@ -25,7 +25,7 @@ spec:
     spec:
       containers:
       - name: stockmaster
-        image: icr.io/ibmcr/restocker@sha256:cc14024365de9d07f408062bb0e8b779bc265c0024b345fa5e5b369325400a14
+        image: icr.io/ibmcr/stockmaster@sha256:cc14024365de9d07f408062bb0e8b779bc265c0024b345fa5e5b369325400a14
         imagePullPolicy: Always
         ports:
         - containerPort: 5000
